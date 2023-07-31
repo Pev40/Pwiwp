@@ -1,5 +1,9 @@
 # PWIWP Red Social
 
+<p align="center">
+  <img src="https://github.com/Pev40/Pwiwp/blob/main/docs/logoBeta.jpg?raw=true" alt="Sublime's custom image"/>
+</p>
+
 ## Descripción general
 Este proyecto tiene como objetivo proporcionar un sistema de autenticación de usuarios mediante la implementación de una función de inicio de sesión y creacion de usuarios
 
