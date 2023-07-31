@@ -94,7 +94,7 @@ Este proyecto tiene como objetivo proporcionar un sistema de autenticación de u
 - La interacción con la base de datos es una parte importante de la mayoría de las aplicaciones web. Si está escribiendo consultas SQL sin procesar, es una buena idea mantenerlas legibles también.
 - Aunque las palabras especiales de SQL y los nombres de funciones no distinguen entre mayúsculas y minúsculas, es una práctica común usar mayúsculas para distinguirlos de los nombres de tablas y columnas.
 
---- javasript
+``` javascript
    async get() {
       return new Promise(async (resolve, reject) => {
         const connection = connectionDb();
@@ -112,7 +112,7 @@ Este proyecto tiene como objetivo proporcionar un sistema de autenticación de u
         return reject(null);
       });
     },
----
+```
 
 ## Características Actuales
 
