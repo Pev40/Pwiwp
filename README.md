@@ -131,3 +131,31 @@ Se ha creado el servicio de inicio de sesión para manejar la autenticación del
 Se ha añadido el controlador de usuarios para gestionar las interacciones relacionadas con los usuarios en el sistema. Incluye la siguiente función:
 - `userCreate(req, res)`: Esta función es responsable de manejar las solicitudes HTTP relacionadas con la creación de usuarios. Toma los objetos de solicitud (`req`) y respuesta (`res`) como entradas y utiliza la función `createUser` del servicio de inicio de sesión para crear un nuevo usuario.
 
+## PRACTICA 11 - PRINCIPIOS SOLID
+### Principio de inversión de dependencia (DIP)
+
+#### Descripción
+Este principio establece dos cosas esenciales:
+
+- Los módulos de alto nivel no deben depender de los módulos de bajo nivel. Ambos deberían depender de abstracciones.
+- Las abstracciones no deben depender de los detalles. Los detalles deben depender de las abstracciones.
+Esto puede ser difícil de entender al principio,
+pero si has trabajado con marcos PHP (como Symfony), has visto una implementación de este principio en forma de inyección de dependencia (DI). Si bien no son conceptos idénticos, DIP evita que los módulos de alto nivel conozcan los detalles de sus módulos de bajo nivel y los configuren. Puede lograr esto a través de DI.
+Un gran beneficio de esto es que reduce el acoplamiento entre módulos. El acoplamiento es un patrón de desarrollo muy malo porque hace que su código sea difícil de refactorizar.
+
+### 2 - Principio abierto/cerrado (OCP)
+#### Descripción
+El Principio Abierto/Cerrado, también conocido como Open/Closed Principle o por sus siglas OCP, es el segundo de los 5 principios SOLID de la programación orientada a objetos.
+
+Los módulos que cumplen con el principio abierto-cerrado tienen dos características principales. Estos son
+
+ - Abiertos para la extensión: Esto significa que el comportamiento del módulo puede ser extendido. Cuando los requerimientos de la aplicación cambian, debemos ser capaces de extender el módulo con estos nuevos comportamientos que satisfagan esos cambios. En otras palabras, debemos ser capaces de cambiar lo que el módulo hace.
+ - Cerrado para la modificación: Esto significa que extender el comportamiento de un módulo no debería tener como resultado cambiar el código fuente, es decir, el código original debe permanecer sin cambios.
+
+
+### 3 - Interface segregation principle(ISP)
+
+#### Descripción
+- No se debe obligar a los clientes a depender de métodos que no utilizan. Cuando se requiere que una Clase realice acciones que no son útiles, es un desperdicio y puede producir errores inesperados si la Clase no tiene la capacidad de realizar esas acciones.
+- Una clase debe realizar solo las acciones necesarias para cumplir su función. Cualquier otra acción debe eliminarse por completo o moverse a otro lugar si otra Clase podría usarla en el futuro.
+
